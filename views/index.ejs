@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+	<h1><%= title %></h1>
+	<p><a href="/form">New Entry</a></p>
+	<ul>
+	<% items.forEach(function(item){ %>
+	  <li><%= item.text %></li>
+	<% }) %>
+	</ul>
+  </body>
+</html>
