@@ -3,15 +3,19 @@ var items = [
 	{"text" : "second item"},
 ]
 
-export function index(req, res) {
+export function index(req, res){
 	res.render("index", { title: "TypeScript - Express", items:items});
 }
 
-export function form(req, res) {
+export function form(req, res){
 	res.render("form", { title: "New Entry" });
 }
 
-export function create(req, res) {
+export function create(req, res){
 	items.push({"text" : req.body.text});
 	res.redirect("/");
+}
+
+export function chat(req, res){
+	res.render("chat", { title: "Chat" });
 }

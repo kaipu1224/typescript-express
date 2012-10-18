@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+  	<meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/client.js"></script>
+  </head>
+  <body>
+    <p><a href="/">Main</a></p>
+    <h1><%= title %></h1>
+    <hr>
+    <p>Message : </p><input type="text" id="msgTxt" size="50" />
+    <input type="button" id="sendBtn" value="Send" />
+    <hr>
+    <h5>[Log]</h5>
+	<div id="log"></div>
+  </body>
+</html>
